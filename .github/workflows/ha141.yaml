@@ -14,6 +14,7 @@ jobs:
 
   job2:
     runs-on: ubuntu-latest
+    needs: job1
     steps:
     - name: Run Job 2
       run: echo "Hallo von Job 2"
